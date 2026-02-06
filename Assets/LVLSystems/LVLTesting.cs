@@ -7,9 +7,7 @@ public class LVLTesting : MonoBehaviour
 
     private void Awake()
     {
-        lvlSystem = new LVLSystem();
-        lvlSystem.AddXP(50);
-        lvlSystem.AddXP(60);
+        lvlSystem =  GetComponent<LVLSystem>();
     }
 
     private void Update()
