@@ -2427,7 +2427,7 @@ CharacterController:
   m_Radius: 0.25
   m_SlopeLimit: 45
   m_StepOffset: 0.32
-  m_SkinWidth: 0.02
+  m_SkinWidth: 0.035
   m_MinMoveDistance: 0.00001
   m_Center: {x: 0, y: 0.891, z: 0}
 --- !u!95 &1004754709067458904
@@ -2481,7 +2481,7 @@ MonoBehaviour:
   _playerCamera: {fileID: 6276565845548631672}
   _camTransform: {fileID: 8541286293454491669}
   _shouldFaceMoveDirection: 0
-  movementThreshold: 0.1
+  movementThreshold: 0.04
   drag: 20
   gravity: 20
   terminalVelocity: 40
@@ -2736,7 +2736,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5983771786780604235}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.15212354, y: 7.792911e-16, z: 4.4870657e-17, w: 0.9883615}
+  m_LocalRotation: {x: 0.15212354, y: 0.0000000147277355, z: -0.0000000022668176, w: 0.9883615}
   m_LocalPosition: {x: 0, y: 2.1698332, z: -1.936594}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3611,8 +3611,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7638226969125046635}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.15212354, y: 8.052741e-16, z: -1.2394367e-16, w: 0.9883615}
-  m_LocalPosition: {x: 0, y: 2.1698332, z: -1.9365921}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.00002002716, y: 1.5678489, z: 0.060840607}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3649,7 +3649,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 90
   orthographic: 0
