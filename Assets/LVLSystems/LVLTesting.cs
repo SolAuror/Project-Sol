@@ -12,7 +12,7 @@ public class LVLTesting : MonoBehaviour
 
     private void Update()
     {
-        if (Keyboard.current.xKey.wasPressedThisFrame)
+        if (Keyboard.current.xKey.isPressed)
         {
             lvlSystem.AddXP(60);
         }

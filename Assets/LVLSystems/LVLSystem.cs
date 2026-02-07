@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class LVLSystem : MonoBehaviour
 {
     private int lvl;
+    private int currentXP;
     private int pastLvlXP;
     private int xpToNextLVL;
     private int totalXP;
@@ -20,13 +21,15 @@ public class LVLSystem : MonoBehaviour
         lvl = 0;
         pastLvlXP = 0;
         totalXP = 0;
+        currentXP = totalXP - pastLvlXP;
         xpToNextLVL = totalXP + ((lvl + 1) * 100);
     }
 
     public void AddXP(int amount)
     {
         totalXP += amount;
-        Debug.Log("Added " + amount + " XP. Total XP: " + totalXP);
+        currentXP = totalXP - pastLvlXP;
+        Debug.Log("Added " + amount + " XP. Total XP: " + totalXP + " | Current XP: " + currentXP);
         if (totalXP >= xpToNextLVL)
         {
             LevelUp();
@@ -39,7 +42,7 @@ public class LVLSystem : MonoBehaviour
         lvl++;
         Debug.Log("Leveled up! You are LVL: " + lvl);
         pastLvlXP = totalXP;
-        xpToNextLVL = totalXP + (lvl * 100);
+        xpToNextLVL = totalXP + ((lvl + 1) * 100);
         
         UpdateUI();
     }
@@ -52,7 +55,7 @@ public class LVLSystem : MonoBehaviour
 
     void UpdateUI()
     {
-        int start = totalXP - pastLvlXP;
+        int start = currentXP;
         int end = xpToNextLVL - pastLvlXP;
 
         lvlText.text = lvl.ToString();
