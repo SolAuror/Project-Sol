@@ -7,7 +7,13 @@ using TMPro.Examples;                                       //using UnityEngine 
 namespace Character.LVLSystem                               // Namespace for the level system so it can be easily accessed.
 {
     public class LVLSystem : MonoBehaviour                          //public class level system for managing character levels and experience points (XP).
-    {                                                               
+    {     
+
+    //temp name system, will move later
+    [SerializeField] private string characterName; 
+    [SerializeField] TextMeshProUGUI nameText;
+    //end temp name system                
+
     private int lvl;                                                // private integer # for Current level of the character
     private int lifetimeTotalXP;                                    // private integer # for Total XP accumulated by the character, only tracks total gains, does not reset on level up.
     private int currentXP;                                          // private integer # for XP accumulated towards the next level (totalXP - pastLvlXP), resets on level up.
@@ -19,12 +25,12 @@ namespace Character.LVLSystem                               // Namespace for the
     [SerializeField] Slider xpSlider;                               // set in editor, Unity Slider UI Reference for XP slider.
 
     [SerializeField] bool debugMode;                                // set in editor, boolean for enabling debug logs to track XP gains and level ups in the console.
-    [SerializeField] bool diageticMode;                             // set in editor, boolean for enabling non UI mode, which enables Diagetic UI updates.
-    [SerializeField] TextMeshPro diageticText;          // set in editor, Text mesh pro prefab reference for diagetic floating text, used to display xp gains in diagetic mode.
+    [SerializeField] TextMeshPro diageticText;                 // set in editor, Text mesh pro UI Reference for diagetic level display.
 
 
     public LVLSystem()                                          //initialize the level system
     {
+        characterName = "Sol";                                 //set temp character name to "Sol", will implement name system later.
         lvl = 0;                                                  //set initial level to 0, add 100 xp to player during script start.
         currentXP = 0;                                            //set initial current XP to 0, this is the xp accumulated towards the next level, resets on level up.
         lifetimeTotalXP = 0;                                      //set initial lifetime total XP to 0, this accumalates throughout the game and does not reset on level up, used for tracking lifetime xp gains.
@@ -82,14 +88,12 @@ namespace Character.LVLSystem                               // Namespace for the
         int start = currentXP;                                                                              //set local integer for start = currentXP.      
         int end = xpToNextLVL;                                                                              //set local integer for end = xpToNextLvl - pastLvlXp                     
 
-
-        if (diageticMode)
+        if (debugMode)
         {
             diageticText.text = lvl.ToString();
         }
 
-        else if (!diageticMode)
-        {
+            nameText.text = characterName;
             lvlText.text = lvl.ToString();                                                                      //update level text to display current level as a string.                                        
             xpText.text = start + " xp / " + end + " xp";                                                       //update xp text to display current xp and xp required for next level in the format "current xp / xp to next level" as a string.                    
         
@@ -101,9 +105,7 @@ namespace Character.LVLSystem                               // Namespace for the
                 Debug.Log("Fill Value: " + fillValue + " | Start: " + start + " | End: " + end +                    //debug to log fill value and current xp values used for UI updates.
                           " | lifetimeTotalXP: " + lifetimeTotalXP + " | pastLvlXP: " + pastLvlXP + 
                           " | currentXP: " + currentXP + " | xpToNextLVL: " + xpToNextLVL);
-            }   
-        }
-
+            }  
         }
     }
 }

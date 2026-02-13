@@ -27,5 +27,7 @@ public class LVLTesting : MonoBehaviour
             lvlSystem.AddXP(xpToNext);
             Debug.Log("V Key Pressed: Added " + (xpToNext * 100) + " XP");
         }
+
+        
     }
 }

@@ -2367,6 +2367,8 @@ GameObject:
   - component: {fileID: 3942620999628192385}
   - component: {fileID: 6105688844069204941}
   - component: {fileID: 1004754709067458904}
+  - component: {fileID: 8559543469220123096}
+  - component: {fileID: 5381451458447953294}
   - component: {fileID: 3094430406646759303}
   - component: {fileID: 6048598090488269797}
   - component: {fileID: 4287129595642086792}
@@ -2452,6 +2454,38 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8559543469220123096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5535994836674947444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09f15797ea940254a81664b08479e7e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Methias Methusala Mortimer II
+  nameText: {fileID: 0}
+  lvlText: {fileID: 0}
+  xpText: {fileID: 0}
+  xpSlider: {fileID: 0}
+  debugMode: 0
+  diageticText: {fileID: 0}
+--- !u!114 &5381451458447953294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5535994836674947444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76ac41da2c5027643b4fbee686ddc08a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  XpGain: 50
 --- !u!114 &3094430406646759303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2736,7 +2770,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5983771786780604235}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.15212354, y: 0.0000000147277355, z: -0.0000000022668176, w: 0.9883615}
+  m_LocalRotation: {x: 0.15212335, y: -1.05625314e-10, z: 1.6187936e-11, w: 0.98836154}
   m_LocalPosition: {x: 0, y: 2.1698332, z: -1.936594}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3612,7 +3646,7 @@ Transform:
   m_GameObject: {fileID: 7638226969125046635}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.00002002716, y: 1.5678489, z: 0.060840607}
+  m_LocalPosition: {x: 0.000019907951, y: 1.5678487, z: 0.060837746}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
