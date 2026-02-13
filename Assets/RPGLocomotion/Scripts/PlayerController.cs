@@ -1,6 +1,7 @@
 using UnityEngine;
+using Character.RPGLocomotion;
 
-namespace Sol.FinalPlayerController
+namespace Character.RPGLocomotion
 {
     [DefaultExecutionOrder(-1)]
     public class PlayerController : MonoBehaviour

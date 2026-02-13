@@ -2,7 +2,7 @@ using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace Sol.FinalPlayerController
+namespace Character.RPGLocomotion
 {
     [DefaultExecutionOrder(-3)]
     public class PlayerInputManager : MonoBehaviour, PlayerControls.IPlayerActionMapActions

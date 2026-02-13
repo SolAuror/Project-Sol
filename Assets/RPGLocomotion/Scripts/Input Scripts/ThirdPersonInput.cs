@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace Sol.FinalPlayerController
+namespace Character.RPGLocomotion
 {
     [DefaultExecutionOrder(-2)]
     public class ThirdPersonInput : MonoBehaviour, PlayerControls.IThirdPersonMapActions

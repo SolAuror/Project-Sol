@@ -1,6 +1,7 @@
 using UnityEngine;
+using Character.RPGLocomotion;
 
-namespace Sol.FinalPlayerController
+namespace Character.RPGLocomotion
 {
     public static class PlayerControlUtil //for ground checks
     {

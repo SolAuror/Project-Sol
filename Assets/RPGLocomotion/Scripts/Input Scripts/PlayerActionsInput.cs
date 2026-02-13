@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace Sol.FinalPlayerController
+namespace Character.RPGLocomotion
 {
     public class PlayerActionsInput : MonoBehaviour, PlayerControls.IPlayerActionMapActions
     {

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Sol.FinalPlayerController
+namespace Character.RPGLocomotion
 {
     public class PlayerState : MonoBehaviour
     {
