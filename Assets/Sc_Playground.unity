@@ -450,6 +450,9 @@ PrefabInstance:
       addedObject: {fileID: 1455293891}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6c8e69e310849a74f9d4a95aac3299d3, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 1455293893}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6c8e69e310849a74f9d4a95aac3299d3, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 1455293890}
   m_SourcePrefab: {fileID: 100100000, guid: 6c8e69e310849a74f9d4a95aac3299d3, type: 3}
 --- !u!1 &903402017 stripped
@@ -613,13 +616,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09f15797ea940254a81664b08479e7e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: Test Dummy
   nameText: {fileID: 2131778580}
   lvlText: {fileID: 1112535534}
   xpText: {fileID: 1826664075}
   xpSlider: {fileID: 555666666}
   debugMode: 0
-  diageticText: {fileID: 0}
+  inWorldDebugText: {fileID: 0}
+--- !u!114 &1455293893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455293887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76e8d2ca11051924aa691f6f057a810e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Test Dummy
+  characterRace: Abusable Target
+  characterAge: 9999
+  characterGender: 78
+  characterLevel: 0
+  characterXP: 0
 --- !u!114 &1477904022 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5906457547183326377, guid: b0b3e6258adafda44981fc1277d9490a, type: 3}

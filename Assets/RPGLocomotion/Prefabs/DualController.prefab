@@ -2368,6 +2368,7 @@ GameObject:
   - component: {fileID: 6105688844069204941}
   - component: {fileID: 1004754709067458904}
   - component: {fileID: 8559543469220123096}
+  - component: {fileID: 1793560206262204578}
   - component: {fileID: 5381451458447953294}
   - component: {fileID: 3094430406646759303}
   - component: {fileID: 6048598090488269797}
@@ -2466,13 +2467,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09f15797ea940254a81664b08479e7e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: Methias Methusala Mortimer II
   nameText: {fileID: 0}
   lvlText: {fileID: 0}
   xpText: {fileID: 0}
   xpSlider: {fileID: 0}
   debugMode: 0
-  diageticText: {fileID: 0}
+  inWorldDebugText: {fileID: 0}
+--- !u!114 &1793560206262204578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5535994836674947444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76e8d2ca11051924aa691f6f057a810e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: soggy chips
+  characterRace: Developer
+  characterAge: 27
+  characterGender: 77
+  characterLevel: 0
+  characterXP: 0
 --- !u!114 &5381451458447953294
 MonoBehaviour:
   m_ObjectHideFlags: 0

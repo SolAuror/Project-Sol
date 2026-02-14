@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using Character.LVLSystem;
+using Character.XpSystem;
 
 public class LVLTesting : MonoBehaviour
 {
@@ -22,7 +22,7 @@ public class LVLTesting : MonoBehaviour
         }
         if (Keyboard.current.vKey.isPressed)
         {
-            currentLVL = lvlSystem.GetCurrentLVL();
+            currentLVL = lvlSystem.GetCharacterLevel();
             xpToNext = currentLVL * 100;
             lvlSystem.AddXP(xpToNext);
             Debug.Log("V Key Pressed: Added " + (xpToNext * 100) + " XP");
