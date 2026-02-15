@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using Character.XpSystem;
+using Character.LevelSystem;
 
 public class LVLTesting : MonoBehaviour
 {
@@ -12,6 +12,10 @@ public class LVLTesting : MonoBehaviour
     private void Awake()
     {
         lvlSystem = gameObject.GetComponent<LVLSystem>();
+        if (lvlSystem.GetCharacterLevel() == 0)
+        {
+            lvlSystem.AddXP(100);
+        }
     }
 
     private void Update()
@@ -22,10 +26,7 @@ public class LVLTesting : MonoBehaviour
         }
         if (Keyboard.current.vKey.isPressed)
         {
-            currentLVL = lvlSystem.GetCharacterLevel();
-            xpToNext = currentLVL * 100;
-            lvlSystem.AddXP(xpToNext);
-            Debug.Log("V Key Pressed: Added " + (xpToNext * 100) + " XP");
+            //add a debug key for increasing attributes
         }
 
         
