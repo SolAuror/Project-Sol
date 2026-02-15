@@ -116,6 +116,8 @@ SkinnedMeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -137,6 +139,7 @@ SkinnedMeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -513,6 +516,8 @@ SkinnedMeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -534,6 +539,7 @@ SkinnedMeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -1078,6 +1084,8 @@ SkinnedMeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1099,6 +1107,7 @@ SkinnedMeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -1763,6 +1772,8 @@ SkinnedMeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1784,6 +1795,7 @@ SkinnedMeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -2369,6 +2381,8 @@ GameObject:
   - component: {fileID: 1004754709067458904}
   - component: {fileID: 8559543469220123096}
   - component: {fileID: 1793560206262204578}
+  - component: {fileID: 6633177389482957830}
+  - component: {fileID: 4655954130522596994}
   - component: {fileID: 5381451458447953294}
   - component: {fileID: 3094430406646759303}
   - component: {fileID: 6048598090488269797}
@@ -2377,6 +2391,8 @@ GameObject:
   - component: {fileID: 7784055489007402740}
   - component: {fileID: 6914475919657375886}
   - component: {fileID: 7847385248923048676}
+  - component: {fileID: 6655149476126228619}
+  - component: {fileID: 685367567338950828}
   m_Layer: 6
   m_Name: DualController
   m_TagString: GameController
@@ -2467,12 +2483,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09f15797ea940254a81664b08479e7e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: {fileID: 0}
-  lvlText: {fileID: 0}
-  xpText: {fileID: 0}
-  xpSlider: {fileID: 0}
-  debugMode: 0
-  inWorldDebugText: {fileID: 0}
 --- !u!114 &1793560206262204578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2485,12 +2495,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76e8d2ca11051924aa691f6f057a810e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: soggy chips
+  characterName: Sol Auror
   characterRace: Developer
   characterAge: 27
   characterGender: 77
   characterLevel: 0
   characterXP: 0
+  characterStrength: 1
+  characterIntelligence: 1
+  characterAgility: 1
+  characterAttributePoints: 0
+--- !u!114 &6633177389482957830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5535994836674947444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 594d0333167ba1d4e8ffba40bdeab385, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Character.LevelSystem.LVLSystem
+  nameText: {fileID: 0}
+  lvlText: {fileID: 0}
+  xpText: {fileID: 0}
+  xpSlider: {fileID: 0}
+  lvlSystemDebugMode: 0
+  _characterName: 
+--- !u!114 &4655954130522596994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5535994836674947444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 303e1ae7747f0794caba2fe2df92be98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Character.LevelSystem.AttributeSystem
+  attributeSystemDebugMode: 0
 --- !u!114 &5381451458447953294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2503,7 +2548,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76ac41da2c5027643b4fbee686ddc08a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  XpGain: 50
+  xpGain: 500
 --- !u!114 &3094430406646759303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2726,6 +2771,37 @@ MonoBehaviour:
   - {fileID: 1812902823090628420}
   - {fileID: 4359149632157404204}
   - {fileID: 664077803978414397}
+--- !u!114 &6655149476126228619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5535994836674947444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 594d0333167ba1d4e8ffba40bdeab385, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Character.LevelSystem.LVLSystem
+  nameText: {fileID: 0}
+  lvlText: {fileID: 0}
+  xpText: {fileID: 0}
+  xpSlider: {fileID: 0}
+  lvlSystemDebugMode: 0
+  _characterName: 
+--- !u!114 &685367567338950828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5535994836674947444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 303e1ae7747f0794caba2fe2df92be98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Character.LevelSystem.AttributeSystem
+  attributeSystemDebugMode: 0
 --- !u!1 &5635049484958449179
 GameObject:
   m_ObjectHideFlags: 0
@@ -3663,8 +3739,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7638226969125046635}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.000019907951, y: 1.5678487, z: 0.060837746}
+  m_LocalRotation: {x: 0.15212335, y: -1.0563624e-10, z: 1.6258968e-11, w: 0.98836154}
+  m_LocalPosition: {x: 0, y: 2.1698332, z: -1.936594}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3701,7 +3777,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.01
+  near clip plane: 0.3
   far clip plane: 1000
   field of view: 90
   orthographic: 0
@@ -3765,7 +3841,6 @@ MonoBehaviour:
   m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
-  m_Version: 2
   m_TaaSettings:
     m_Quality: 3
     m_FrameInfluence: 0.1
@@ -3773,6 +3848,7 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+  m_Version: 2
 --- !u!114 &5906457547183326377
 MonoBehaviour:
   m_ObjectHideFlags: 0
