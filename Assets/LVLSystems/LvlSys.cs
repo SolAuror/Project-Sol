@@ -177,7 +177,7 @@ public class LVLSystem : MonoBehaviour                                          
 #endregion
     }
 
-public class AttributeSystem : MonoBehaviour                                                     //initialize the attribute system
+public class AttributeSystem                                                                                   //initialize the attribute system
     {
     private LVLSystem _levelSystem;                                                                          //reference to the level system to fetch level info for attribute point allocation
     
