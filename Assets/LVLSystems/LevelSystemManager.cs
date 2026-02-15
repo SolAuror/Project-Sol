@@ -6,7 +6,7 @@ namespace Character.LevelSystem
     [RequireComponent(typeof(LVLSystem))]
     [RequireComponent(typeof(AttributeSystem))]
     [RequireComponent(typeof(CharacterSheet))]
-    public class LevelSystemManager : MonoBehaviour
+    public class CharacterSystemManager : MonoBehaviour
     {
         public LVLSystem LevelSystem { get; private set; }
         public AttributeSystem AttributeSystem { get; private set; }
