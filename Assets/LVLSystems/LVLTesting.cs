@@ -5,6 +5,7 @@ using Character.LevelSystem;
 public class LVLTesting : MonoBehaviour
 {
     private LVLSystem lvlSystem;
+    private AttributeSystem atrSystem;
     private int xpToNext;
     private int currentLVL;
     [SerializeField] private int XpGain = 50;
@@ -12,10 +13,7 @@ public class LVLTesting : MonoBehaviour
     private void Awake()
     {
         lvlSystem = gameObject.GetComponent<LVLSystem>();
-        if (lvlSystem.GetCharacterLevel() == 0)
-        {
-            lvlSystem.AddXP(100);
-        }
+        atrSystem = gameObject.GetComponent<AttributeSystem>();
     }
 
     private void Update()
@@ -26,7 +24,9 @@ public class LVLTesting : MonoBehaviour
         }
         if (Keyboard.current.vKey.isPressed)
         {
-            //add a debug key for increasing attributes
+            atrSystem.AddAttributePoint("Strength");
+            atrSystem.AddAttributePoint("Intelligence");
+            atrSystem.AddAttributePoint("Agility");
         }
 
         
