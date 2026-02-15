@@ -26,11 +26,15 @@ namespace Character.LevelSystem
         {
             _levelSystem = manager.LevelSystem;                                                 
             _characterSheet = manager.Sheet;
-        }
-        public void Start()                                                                                     //Start method to initialize attribute system, can be expanded to include loading saved attribute values, or applying racial/class bonuses, etc.
-        {
-            _levelSystem.OnCharacterLevelUpdate += HandleLevelUp;                                               //subscribe to level up event from level system to gain attribute points on level up.
 
+            if (_levelSystem != null)
+            {
+                _levelSystem.OnCharacterLevelUpdate += HandleLevelUp;                                           //subscribe to level up event from level system to gain attribute points on level up.
+            }
+        }
+
+        public void Start()                                                                                     //Start method to send initial attribute values to character sheet after all systems are initialized
+        {
             // Notify CharacterSheet of initial attribute values
             NotifyAllAttributeValues();
         }
