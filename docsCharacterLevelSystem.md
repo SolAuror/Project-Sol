@@ -151,5 +151,5 @@ flowchart TD
   - [Assets/LVLSystems/AttributeSystem.cs](https://github.com/SolAuror/Project-Sol/blob/6047473f1e2ae746f84ec6076f7bab1871ca4d89/Assets/LVLSystems/AttributeSystem.cs)
 - CharSheet.cs:
   - [Assets/LVLSystems/CharSheet.cs](https://github.com/SolAuror/Project-Sol/blob/6047473f1e2ae746f84ec6076f7bab1871ca4d89/Assets/LVLSystems/CharSheet.cs)
-- CharacterSystemManager.cs (requested as LevelSystemManager.cs):
+- CharacterSystemManager.cs:
   - [Assets/LVLSystems/CharacterSystemManager.cs](https://github.com/SolAuror/Project-Sol/blob/6047473f1e2ae746f84ec6076f7bab1871ca4d89/Assets/LVLSystems/CharacterSystemManager.cs)
