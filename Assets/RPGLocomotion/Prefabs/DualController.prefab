@@ -2391,8 +2391,6 @@ GameObject:
   - component: {fileID: 7784055489007402740}
   - component: {fileID: 6914475919657375886}
   - component: {fileID: 7847385248923048676}
-  - component: {fileID: 6655149476126228619}
-  - component: {fileID: 685367567338950828}
   m_Layer: 6
   m_Name: DualController
   m_TagString: GameController
@@ -2771,37 +2769,6 @@ MonoBehaviour:
   - {fileID: 1812902823090628420}
   - {fileID: 4359149632157404204}
   - {fileID: 664077803978414397}
---- !u!114 &6655149476126228619
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5535994836674947444}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 594d0333167ba1d4e8ffba40bdeab385, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Character.LevelSystem.LVLSystem
-  nameText: {fileID: 0}
-  lvlText: {fileID: 0}
-  xpText: {fileID: 0}
-  xpSlider: {fileID: 0}
-  lvlSystemDebugMode: 0
-  _characterName: 
---- !u!114 &685367567338950828
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5535994836674947444}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 303e1ae7747f0794caba2fe2df92be98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Character.LevelSystem.AttributeSystem
-  attributeSystemDebugMode: 0
 --- !u!1 &5635049484958449179
 GameObject:
   m_ObjectHideFlags: 0
@@ -3739,8 +3706,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7638226969125046635}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.000019073486, y: 1.5678488, z: 0.0608387}
+  m_LocalRotation: {x: 0.15212335, y: -1.0563624e-10, z: 1.6258968e-11, w: 0.98836154}
+  m_LocalPosition: {x: 0, y: 2.1698332, z: -1.936594}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3777,7 +3744,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.01
+  near clip plane: 0.3
   far clip plane: 1000
   field of view: 90
   orthographic: 0
